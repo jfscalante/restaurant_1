@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rock+Salt&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/Simple\ Cooking.png);
+  }
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header {
+    background: rgba(1, 1, 1, 0.137);
+    backdrop-filter: blur(82px );
+    box-shadow: 0 0 30px black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px ;
+    
+}
+.logo1 a{
+  background-image: url(../img/logo_restaurante\ cooking.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 70px;
+}
+.container-header header ul {
+    display: flex;
+    list-style: none;
+    height: 90px;
+    align-items: center;
+}
+
+.container-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 10px 15px;
+    padding: 10px 10px;
+    transition: .1s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover{
+    color: #ffffff;
+    border: 1px solid white;
+    background-image: url(Diseño\ sin\ título\ \(3).png);
+    border-radius: 60px;
+    opacity: 30px;
+}
+
+.texto-imagen img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    border-radius:;
+}
+  
+  .reservation-section {
+    width: 600px;
+    height: 700px;
+    margin: 50px auto;
+    padding: 100px 20px 20px 20px;
+    background: rgba(1, 1, 1, 0.137);
+    backdrop-filter: blur(12px );
+    box-shadow: 0 12px 8px rgb(0, 0, 0);
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .reservation-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 6px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 0, 0);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+/* Button Hover Effect */
+  .btn_color{
+    background-color: red;
+    border-radius: 30px;
+}
+.btn_color:active{
+    background-color: rgba(255, 0, 0, 0.605);
+}
+  
+  
+  
